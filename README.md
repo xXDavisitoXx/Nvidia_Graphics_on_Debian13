@@ -51,9 +51,11 @@ mokutil --list-enrolled
 ```
 
 ```bash
-# apt install nvidia-driver nvidia-settings
+apt -V install nvidia-driver nvidia-kernel-open-dkms
  ```
-
+```bash
+reboot
+```
 ```bash
 dkms-status
  ```

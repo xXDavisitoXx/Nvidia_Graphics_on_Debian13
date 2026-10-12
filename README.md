@@ -43,16 +43,29 @@ mokutil --import /var/lib/dkms/mok.pub
 ```bash
 reboot
 ```
+
 ```bash
 mokutil --sb-state
 ```
+
 ```bash
 mokutil --list-enrolled
 ```
 
 ```bash
 apt -V install nvidia-driver nvidia-kernel-open-dkms
- ```
+```
+### Disable nouveau module
+create new file
+```bash
+sudo nano /etc/modprobe.d/disable-nouveau.conf
+```
+use this conf
+```conf
+blacklist nouveau
+options nouveau modeset=0
+```
+apply
 ```bash
 reboot
 ```

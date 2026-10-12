@@ -46,7 +46,9 @@ reboot
 ```bash
 mokutil --sb-state
 ```
-
+```bash
+mokutil --list-enrolled
+```
 
 ```bash
 # apt install nvidia-driver nvidia-settings

@@ -30,3 +30,10 @@ Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 ```bash
 # apt install linux-headers-$(uname -r)
  ```
+```bash
+# apt install nvidia-driver nvidia-settings
+ ```
+
+```bash
+dkms-status
+ ```

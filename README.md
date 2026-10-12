@@ -58,4 +58,13 @@ reboot
 ```
 ```bash
 dkms-status
- ```
+```
+:check: installed
+
+```bash
+dkms-status
+```
+```bash
+lsmod | .grep -i 'nvidia|noveau'
+```
+

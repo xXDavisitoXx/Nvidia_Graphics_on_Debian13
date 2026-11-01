@@ -29,7 +29,13 @@ Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
 ```bash
 apt install linux-headers-$(uname -r) mokutil
+ ``` 
+💻:Install packets for servers(proxmox):
+```bash
+apt install --no-install-recommends -V nvidia-kernel-dkms nvidia-smi nvidia-settings
  ```
+
+🛡️:Whith secure boot enabled only:
 ```bash
 dkms generate _mok
  ```
@@ -39,7 +45,7 @@ mokutil --test-key /var/lib/dkms/mok.pub
 ```bash
 mokutil --import /var/lib/dkms/mok.pub
 ```
-⚠️ IMPORTANTE: Te pedirá introducir una contraseña temporal (te la pedirá 2 veces). Apúntala o recuérdala porque la necesitarás en el reinicio.
+🔥 IMPORTANTE: Te pedirá introducir una contraseña temporal (te la pedirá 2 veces). Apúntala o recuérdala porque la necesitarás en el reinicio.
 ```bash
 reboot
 ```

@@ -40,6 +40,7 @@ apt install linux-headers-$(uname -r) mokutil
 ``` 
 💻:Install packets for servers(proxmox):
 ```bash
+apt install -y build-essential dkms pkg-config libglvnd-dev pve-headers-$(uname -r)
 apt install --no-install-recommends -V nvidia-kernel-dkms nvidia-smi nvidia-settings
  ```
 

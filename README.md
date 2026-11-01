@@ -27,9 +27,17 @@ Components: main contrib non-free non-free-firmware
 Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 ```
 
+Enable Nvidia positories:
+```bash
+wget https://developer.download.nvidia.com/compute/cuda/repos/<distribution>/x86_64/cuda-keyring_1.1-1_all.deb
+dpkg -i cuda-keyring_1.1-1_all.deb
+```
+```bash
+apt update
+```
 ```bash
 apt install linux-headers-$(uname -r) mokutil
- ``` 
+``` 
 💻:Install packets for servers(proxmox):
 ```bash
 apt install --no-install-recommends -V nvidia-kernel-dkms nvidia-smi nvidia-settings

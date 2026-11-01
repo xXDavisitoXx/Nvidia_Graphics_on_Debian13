@@ -40,7 +40,7 @@ apt install linux-headers-$(uname -r) mokutil
 ``` 
 💻:Install packets for servers(proxmox):
 ```bash
-apt install  gcc make wget build-essential dkms pkg-config libglvnd-dev pve-headers-$(uname -r) pkg-config libglvnd-dev
+apt install build-essential dkms pkg-config libglvnd-dev pve-headers-$(uname -r) pkg-config libglvnd-dev
  ```
 
 🛡️:Whith secure boot enabled only:
